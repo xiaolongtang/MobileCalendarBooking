@@ -1,4 +1,4 @@
-angular.module('starter', [ 'ionic', 'ngAnimate', 'ui.rCalendar' ])
+angular.module('starter', [ 'ionic', 'ngAnimate', 'ui.rCalendar', 'ion-datetime-picker' ])
 
 .run(function($ionicPlatform, $animate) {
 	'use strict';

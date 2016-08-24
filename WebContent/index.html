@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="css/ionic.min.css" rel="stylesheet">
 <link href="css/calendar.min.css" rel="stylesheet">
+<link href="css/ion-datetime-picker.min.css" rel="stylesheet">
 <style>
 body {
 	cursor: url('http://www.runoob.com/static/img/finger.png'), auto;
@@ -39,6 +40,7 @@ body {
 	<script id="templates/home.html" type="text/ng-template">
     <ion-view view-title={{viewTitle}}>
         <ion-nav-buttons side="right">
+            <button class="button" ion-datetime-picker ng-model="datetimeValue">Add</button>
             <button class="button" ng-disabled="isToday()" ng-click="today()">Today</button>
             <button class="button" ng-click="changeMode('month')">M</button>
             <button class="button" ng-click="changeMode('week')">W</button>
@@ -80,6 +82,7 @@ body {
 
 	<script src="js/ionic.bundle.min.js"></script>
 	<script src="js/calendar-tpls.js"></script>
+	<script src="js/ion-datetime-picker.min.js"></script>
 	<script src="js/index.js"></script>
 </body>
 
