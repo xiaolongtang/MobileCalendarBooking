@@ -47,7 +47,7 @@ body {
             <button class="button" ng-click="changeMode('month')">M</button>
             <button class="button" ng-click="changeMode('week')">W</button>
             <button class="button" ng-click="changeMode('day')">D</button>
-            <button class="button" ng-click="loadEvents()">Load Events</button>
+            <!--<button class="button" ng-click="loadEvents()">Load Events</button>-->
         </ion-nav-buttons>
 
         <ion-content scroll="false" class="main-content">
@@ -64,9 +64,25 @@ body {
         <ion-content>
             <div class="list">
                  <div class="item">
-                    @IonicFramework
-                </div>
+                    <p>ASN: 123456</p><br>
+                    <p>Appointment: 2016-8-26 10:30 -- 2016-8-26 12:30</p><br>
+                    <button class="button button-small button-light" style="background:#387EF5;color:white;">Update</button>
+                    <button class="button button-small button-light" style="background:red;color:white;">Delete</button>
+                 </div>
+                 
+                 <div class="item">
+                    <p>ASN: 123456</p><br>
+                    <p>Appointment: 2016-8-26 10:30 -- 2016-8-26 12:30</p><br>
+                    <button class="button button-small button-light" style="background:#387EF5;color:white;">Update</button>
+                    <!--<button class="button button-small button-light" style="background:red;color:white;">Delete</button>-->
+                 </div>
 
+                 <div class="item">
+                    <p>ASN: 123456</p><br>
+                    <p>Appointment: 2016-8-26 10:30 -- 2016-8-26 12:30</p><br>
+                    <button class="button button-small button-light" style="background:#CDCDCD;color:white;">Update</button>
+                    <!--<button class="button button-small button-light" style="background:red;color:white;">Delete</button>-->
+                 </div>
             </div>
         </ion-content>
     </ion-view>
